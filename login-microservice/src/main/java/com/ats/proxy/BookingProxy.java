@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name = "MS-05-Booking-eurekaClient")
+@FeignClient(name = "MS-05-Booking-eurekaClient",url = "http://localhost:8051")
 //@RibbonClient(name = "MS-05-Booking-eurekaClient")
 public interface BookingProxy {
     @GetMapping("/api/display")
